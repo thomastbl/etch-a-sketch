@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20px;
+  border: 2px solid rgb(255, 122, 122);
+}
+
+.flex-container div {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
