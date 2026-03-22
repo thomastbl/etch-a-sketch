@@ -1,21 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(155, 122, 255);
+  height: 90vh;
+  margin: 0;
+  margin-top: 10px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 90vw;
   border: 2px solid rgb(255, 122, 122);
 }
 
 .flex-container div {
   width: 25px;
   height: 25px;
-  border: 1px solid #ccc;
+  border: 1px solid #4c4c4c;
   box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .wrapper {
