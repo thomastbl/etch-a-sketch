@@ -1,8 +1,4 @@
-const gridSizeInput = document.querySelector(".grid-input");
-const flexContainer = document.querySelector(".flex-container");
-const button = document.querySelector("button");
-
-gridSizeInput.addEventListener("input", () => {
+function fillGrid() {
   flexContainer.innerHTML = "";
   flexContainer.style.width = gridSizeInput.value + "px";
   flexContainer.style.height = gridSizeInput.value + "px";
@@ -14,8 +10,15 @@ gridSizeInput.addEventListener("input", () => {
     const cell = document.createElement("div");
     flexContainer.appendChild(cell);
   }
-});
+}
+
+const gridSizeInput = document.querySelector(".grid-input");
+const flexContainer = document.querySelector(".flex-container");
+const button = document.querySelector("button");
+
+gridSizeInput.addEventListener("input", fillGrid);
 
 button.addEventListener("click", () => {
   flexContainer.innerHTML = "";
+  fillGrid();
 });
