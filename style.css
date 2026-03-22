@@ -1,13 +1,26 @@
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  width: 20px;
+  width: 80vw;
   border: 2px solid rgb(255, 122, 122);
 }
 
 .flex-container div {
-  width: 10px;
-  height: 10px;
+  width: 25px;
+  height: 25px;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
