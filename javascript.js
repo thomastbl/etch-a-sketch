@@ -10,8 +10,6 @@ function fillGrid() {
 
     cell.addEventListener("mousedown", () => {
       isDrawing = true;
-    });
-    cell.addEventListener("click", () => {
       cell.classList.add("colorized-cell");
     });
     cell.addEventListener("mouseup", () => {
